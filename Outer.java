@@ -7,9 +7,9 @@ public class Outer
 	
 	
 	
-	class Inner{
+	static class Inner{
 		int p=30;
-		static int m =40;
+		static int r =40;
 		
 		void show()
 		{
@@ -25,12 +25,9 @@ public class Outer
 
 	}
 	
-	
-	
-
 	public static void main(String[] args) {
-		//Outer o=new Outer();
-		//System.out.println(o.x);
+		Outer o=new Outer();
+		System.out.println(o.x);
 		
 		//Inner i=new Inner();
 		

@@ -4,7 +4,7 @@ public class NonstaticNestedClass {
 int x=10;
 static int y=20;
 
-class B
+class B  //Non static nested class
 {
 	int p=30;
 	void show() 
@@ -16,8 +16,8 @@ class B
 	}
 }
 	public static void main(String[] args) {
- A a=new A();
- B a=a.new B();
+		NonstaticNestedClass a=new NonstaticNestedClass();
+ B b=a.new B();
  System.out.println(b.p);
  b.show();
  
